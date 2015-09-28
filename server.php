@@ -20,7 +20,7 @@ if ($uri !== '/' && file_exists(__DIR__.'/public'.$uri)) {
 
 // Allows CORS requests 
 header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: "POST, GET, OPTIONS, DELETE, PUT"');
+header('Access-Control-Allow-Methods: "POST, GET, OPTIONS, DELETE, PUT, PATCH"');
 header('Access-Control-Allow-Headers: "Origin, X-Requested-With, Content-Type, Accept"');
 
 require_once __DIR__.'/public/index.php';
